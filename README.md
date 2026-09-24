@@ -1,4 +1,13 @@
 # hk32-metapac
 
-A Rust PAC crate for the HK32 series of Cortex-M MCUs. It's automatically generated from the [hk32-data](https://github.com/arvenora/hk32-data) repository.
+Peripheral access crate for HK32 microcontrollers.
 
+## Supported chips
+
+- `HK32F030MF4P6`
+
+The first listed chip is enabled by default. To select another chip, disable default features:
+
+```toml
+hk32-metapac = { version = "0.1", default-features = false, features = ["hk32f030md4p6", "rt"] }
+```

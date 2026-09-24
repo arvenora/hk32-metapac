@@ -4,10 +4,24 @@
 name = "hk32-metapac"
 version = "0.1.0"
 edition = "2024"
-publish = false
+authors = ["Voltangle <me@voltangle.dev>"]
+description = "Peripheral access crate for HK32 microcontrollers"
+license = "Apache-2.0"
+repository = "https://github.com/arvenora/hk32-metapac"
+readme = "README.md"
+keywords = ["hk32", "embedded", "no-std", "arm"]
+categories = ["embedded", "no-std", "hardware-support"]
+include = [
+    "src/**/*.rs",
+    "src/**/*.x",
+    "Cargo.toml",
+    "README.md",
+    "LICENSE",
+    "build.rs",
+]
 
 [features]
-default = []
+default = ["hk32f030mf4p6"]
 rt = ["dep:cortex-m-rt"]
 defmt = ["dep:defmt"]
 hk32f030mf4p6 = []
@@ -16,3 +30,8 @@ hk32f030mf4p6 = []
 cortex-m = "0.7"
 cortex-m-rt = { version = "0.7", optional = true, features = ["device"] }
 defmt = { version = "1", optional = true }
+
+[package.metadata.docs.rs]
+features = ["hk32f030mf4p6", "rt"]
+default-target = "thumbv6m-none-eabi"
+targets = []
