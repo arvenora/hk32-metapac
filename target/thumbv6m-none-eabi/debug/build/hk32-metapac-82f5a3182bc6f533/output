@@ -1,0 +1,4 @@
+cargo:rustc-link-search=/home/runner/work/_temp/hk32-metapac/src/chips/hk32f030mf4p6
+cargo:rerun-if-changed=/home/runner/work/_temp/hk32-metapac/src/chips/hk32f030mf4p6/pac.rs
+cargo:rerun-if-changed=/home/runner/work/_temp/hk32-metapac/src/chips/hk32f030mf4p6/device.x
+cargo:rerun-if-changed=/home/runner/work/_temp/hk32-metapac/src/chips/hk32f030mf4p6/memory.x

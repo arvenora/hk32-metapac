@@ -1,0 +1,18 @@
+[workspace]
+
+[package]
+name = "hk32-metapac"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[features]
+default = []
+rt = ["dep:cortex-m-rt"]
+defmt = ["dep:defmt"]
+hk32f030mf4p6 = []
+
+[dependencies]
+cortex-m = "0.7"
+cortex-m-rt = { version = "0.7", optional = true, features = ["device"] }
+defmt = { version = "1", optional = true }
