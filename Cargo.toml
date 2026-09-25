@@ -8,17 +8,8 @@ authors = ["Voltangle <me@voltangle.dev>"]
 description = "Peripheral access crate for HK32 microcontrollers"
 license = "Apache-2.0"
 repository = "https://github.com/arvenora/hk32-metapac"
-readme = "README.md"
 keywords = ["hk32", "embedded", "no-std", "arm"]
 categories = ["embedded", "no-std", "hardware-support"]
-include = [
-    "src/**/*.rs",
-    "src/**/*.x",
-    "Cargo.toml",
-    "README.md",
-    "LICENSE",
-    "build.rs",
-]
 
 [features]
 default = ["hk32f030mf4p6"]
